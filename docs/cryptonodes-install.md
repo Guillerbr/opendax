@@ -1,29 +1,42 @@
-Parity cryptonode-wallet Blockchain
+# Parity cryptonode-wallet Blockchain
 
 The geth image service cryptonode and daemon need to be started:
 
-rake service: daemons [start]
-rake service: cryptonodes [start]
+```rake service: daemons [start]```
 
-Command list helper:
+```rake service: cryptonodes [start]```
 
-- docker run parity/parity:v2.5.11-stable --help
+## Command list helper:
 
-Connect Main eth account:
+```docker run parity/parity:v2.5.11-stable --help```
 
-- docker run -it parity/parity:v2.5.11-stable
+##Connect Main eth account:
 
-Connect to Kovan network testnet:
+```docker run -it parity/parity:v2.5.11-stable```
 
-- docker run -it parity/parity:v2.5.11-stable --chain kovan
+##Connect to Kovan network testnet:
 
-Command create account a princpal network:
+```docker run -it parity/parity:v2.5.11-stable --chain kovan```
 
-- docker run -it parity/parity:v2.5.11-stable account new
+##Command create account a princpal network:
 
-Command create testnet Kovan account:
+```docker run -it parity/parity:v2.5.11-stable account new```
 
-- docker run -it parity/parity:v2.5.11-stable --chain kovan account new
+##Command create testnet Kovan account:
+
+```docker run -it parity/parity:v2.5.11-stable --chain kovan account new```
 
 
 
+
+
+
+
+
+### Exemple
+'test exemple'
+
+#### Exemple
+'test exemple'
+
+### Exemple
