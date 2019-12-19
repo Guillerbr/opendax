@@ -1,0 +1,1 @@
+Parity cryptonode-wallet Blockchain
