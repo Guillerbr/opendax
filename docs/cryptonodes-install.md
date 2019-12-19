@@ -57,6 +57,7 @@ The geth image service cryptonode and daemon need to be started:
 ## References
 
 * https://wiki.parity.io/
+* https://wiki.parity.io/JSONRPC
 
 
 
