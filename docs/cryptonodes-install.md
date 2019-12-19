@@ -33,11 +33,3 @@ The geth image service cryptonode and daemon need to be started:
 
 
 
-
-### Exemple
-'test exemple'
-
-#### Exemple
-'test exemple'
-
-
