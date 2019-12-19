@@ -6,11 +6,11 @@ The geth image service cryptonode and daemon need to be started:
 
 ```rake service: cryptonodes [start]```
 
-### Command list helper:
+#### Command list helper:
 
 ```docker run parity/parity:v2.5.11-stable --help```
 
-### Connect Main eth account:
+#### Connect Main eth account:
 
 ```docker run -it parity/parity:v2.5.11-stable```
 
