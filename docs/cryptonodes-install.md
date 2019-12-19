@@ -54,6 +54,10 @@ The geth image service cryptonode and daemon need to be started:
 
 
 
+## References
+
+* https://wiki.parity.io/
+
 
 
 
