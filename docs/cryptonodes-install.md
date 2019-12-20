@@ -22,7 +22,7 @@ The geth image service cryptonode and daemon need to be started:
 
 ```docker run -it parity/parity:v2.5.11-stable --chain ropsten```
 
-#### Command create account a principal network:
+#### Command create account a main network:
 
 ```docker run -it parity/parity:v2.5.11-stable account new```
 
