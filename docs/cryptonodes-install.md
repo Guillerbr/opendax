@@ -50,6 +50,26 @@ The geth image service cryptonode and daemon need to be started:
 
 ```docker run -it parity/parity:v2.5.11-stable --chain kovan --jsonrpc-apis personal```
 
+## APIS 
+
+```docker run -it parity/parity:v2.5.11-stable --chain kovan --jsonrpc-apis <COMAND>```
+
+List api <COMAND>
+  
+* web3
+* net
+* eth
+* eth_pubsub
+* eth_pubsub
+* personal
+* parity
+* parity_accounts
+* parity_set
+* pubsub
+* signer
+* trace
+* shh
+* secretstore
 
 
 
