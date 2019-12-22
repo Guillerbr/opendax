@@ -34,6 +34,9 @@ The geth image service cryptonode and daemon need to be started:
 
 ```docker run -it parity/parity:v2.5.11-stable --chain ropsten account new```
 
+#### Command account list testnet Kovan:
+
+```docker run -it parity/parity:v2.5.11-stable --chain kovan account list```
 
 ## Jsonrpc-apis personal
 
@@ -71,7 +74,11 @@ List api <COMAND>
 * shh
 * secretstore
 
+## Useful docker commands
 
+#### CLI parity bash or sh
+
+```docker exec -it <CONTAINER-ID> sh``` or ```docker exec -it <CONTAINER-ID> bash```
 
 
 ## References
