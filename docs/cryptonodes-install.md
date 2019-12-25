@@ -2,9 +2,14 @@
 
 The geth image service cryptonode and daemon need to be started:
 
-```rake service: daemons [start]```
+```rake service:daemons[start]```
 
-```rake service: cryptonodes [start]```
+```rake service:cryptonodes[start]```
+
+```rake service:cryptonodes[stop]```
+
+```rake service:cryptonodes[restart]```
+
 
 #### Command list helper:
 
@@ -79,6 +84,21 @@ List api <COMAND>
 #### CLI parity bash or sh
 
 ```docker exec -it <CONTAINER-ID> sh``` or ```docker exec -it <CONTAINER-ID> bash```
+
+#### Check logs container
+
+```docker logs -f <COINTAINER-D>```
+or
+```docker-compose logs -f parity```
+
+#### Check status container
+
+```docker-compose ps```
+
+
+docker exec -it opendax_parity_1 sh
+opendax_parity_1
+
 
 
 ## References
