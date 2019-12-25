@@ -96,8 +96,7 @@ or
 ```docker-compose ps```
 
 
-docker exec -it opendax_parity_1 sh
-opendax_parity_1
+
 
 
 
