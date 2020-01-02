@@ -146,9 +146,18 @@ walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )
 getzmqnotifications
 
 
-
+-------------Examples Curl----------------------
 
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "validateaddress", "params": ["1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets"}' -H 'content-type: application/json;' http://3.17.181.129:8332
+
+------------------------------------------------
+---------------Links docs-----------------------
+
+https://bitcoin.org/en/full-node#what-is-a-full-node
+
+
+
+-----------------------------------------------
