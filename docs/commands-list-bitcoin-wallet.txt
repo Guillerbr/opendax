@@ -1,3 +1,5 @@
+LIST COMMANDS BITCOIN CORE 
+
 == Blockchain ==
 getbestblockhash
 getblock "blockhash" ( verbosity )
