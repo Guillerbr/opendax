@@ -144,21 +144,43 @@ walletpassphrase "passphrase" timeout
 walletpassphrasechange "oldpassphrase" "newpassphrase"
 walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )
 
-== Zmq ==
-getzmqnotifications
+== USE FREQUENTE ==
+
+getnewaddress
+
+listwallets
+
+getwalletinfo
+
+getblockchaininfo
+
+
 
 
 -------------Examples Curl----------------------
 
 
-curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "validateaddress", "params": ["1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "validateaddress", "params": ["1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"] }' -H 'content-type: text/plain;' http://3.17.181.129:8332
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets"}' -H 'content-type: application/json;' http://3.17.181.129:8332
 
+curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccount","params":["senha123456"],"id":42}'  http://3.17.181.129:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets"}' -H 'content-type: text/plain;' http://3.15.6.89:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockchaininfo", "params": [] }' -H 'content-type: text/plain;' http://3.15.6.89:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockchaininfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;'http://3.15.6.89:8332/
 ------------------------------------------------
 ---------------Links docs-----------------------
 
+https://bitcoincore.org/en/doc/0.16.0/rpc/wallet/getnewaddress/
 https://bitcoin.org/en/full-node#what-is-a-full-node
+https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
 
 
