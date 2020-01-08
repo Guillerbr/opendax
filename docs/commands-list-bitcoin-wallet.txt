@@ -146,6 +146,8 @@ walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )
 
 == USE FREQUENT ==
 
+bitcoin-cli createwallet "testwallet"
+
 getnewaddress
 
 listwallets
@@ -153,6 +155,13 @@ listwallets
 getwalletinfo
 
 getblockchaininfo
+
+validateaddress "address"
+
+getblockcount
+
+walletpassphrase "passphrase" timeout
+
 
 
 
@@ -174,15 +183,26 @@ curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
-curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;'http://3.15.6.89:8332/
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;' http://3.15.6.89:8332/
+
+curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createwallet", "params": ["testwallet"] }' -H 'content-type: text/plain;' http://user1:password1@3.17.181.129:8332
+
+curl --data-binary '{"jsonrpc": "1.0", "id":"curltext", "method": "createwallet"}' -H 'content-type: text/plain;' http://user1:password1@3.17.181.129:8332
+
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------------------------
 *
 ---------------Links docs-----------------------
 
-https://bitcoincore.org/en/doc/0.16.0/rpc/wallet/getnewaddress/
+https://bitcoincore.org/en/doc/0.19.0/
+https://bitcoincore.org/en/doc/0.16.0/
+
 https://bitcoin.org/en/full-node#what-is-a-full-node
 https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
 
 
------------------------------------------------
+------------------------------------------------
