@@ -144,7 +144,7 @@ walletpassphrase "passphrase" timeout
 walletpassphrasechange "oldpassphrase" "newpassphrase"
 walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )
 
-== USE FREQUENTE ==
+== USE FREQUENT ==
 
 getnewaddress
 
@@ -157,7 +157,7 @@ getblockchaininfo
 
 
 
--------------Examples Curl----------------------
+-------------------------------------------------Examples Curl----------------------------------------------------------------------
 
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "validateaddress", "params": ["1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"] }' -H 'content-type: text/plain;' http://3.17.181.129:8332
@@ -175,7 +175,8 @@ curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 
 curl --user user1 --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listwallets", "params": ["wallet_name"] }' -H 'content-type: text/plain;'http://3.15.6.89:8332/
-------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+*
 ---------------Links docs-----------------------
 
 https://bitcoincore.org/en/doc/0.16.0/rpc/wallet/getnewaddress/
