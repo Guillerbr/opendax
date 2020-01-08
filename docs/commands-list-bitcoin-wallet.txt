@@ -144,7 +144,7 @@ walletpassphrase "passphrase" timeout
 walletpassphrasechange "oldpassphrase" "newpassphrase"
 walletprocesspsbt "psbt" ( sign "sighashtype" bip32derivs )
 
-== USE FREQUENT ==
+____________________________________COMAND USE FREQUENT_________________________________________
 
 bitcoin-cli createwallet "testwallet"
 
