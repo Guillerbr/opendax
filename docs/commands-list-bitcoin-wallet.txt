@@ -205,6 +205,8 @@ https://bitcoincore.org/en/doc/0.16.0/
 https://bitcoin.org/en/full-node#what-is-a-full-node
 https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
+https://btcparaprogramadores.marcoagner.org/bitcoin-core.html   
+
 
 
 ------------------------------------------------
