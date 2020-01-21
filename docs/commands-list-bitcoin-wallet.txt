@@ -164,9 +164,13 @@ getblockcount
 
 walletpassphrase "passphrase" timeout
 
+-------------------TESTNET--------------------------
+
 bitcoin-cli -testnet getblockchaininfo 
 
 bitcoin-cli -testnet createwallet
+
+bitcoin-cli -testnet getnewaddress 
 
 
 
